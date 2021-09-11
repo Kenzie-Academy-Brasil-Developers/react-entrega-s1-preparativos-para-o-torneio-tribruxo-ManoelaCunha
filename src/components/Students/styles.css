@@ -1,0 +1,47 @@
+.container-card {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-two {
+  width: 200px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bolder;
+  margin: 25px;
+  color: white;
+  border-radius: 2px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  background-color: transparent;
+  position: relative;
+}
+
+.btn-two:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 35px;
+  background-color: rgba(250, 250, 250, 0.2);
+  border-radius: 2px;
+  transition: all 2s ease;
+}
+
+.btn-two:hover:before {
+  width: 100%;
+}
+
+.btn-two:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.5em whitesmoke;
+}
+
+.btn-two:active {
+  margin: 25.5px;
+  font-size: 12.5px;
+}

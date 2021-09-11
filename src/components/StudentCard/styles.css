@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+.card {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-img {
+  width: 200px;
+  height: 230px;
+  border-radius: 10px;
+  position: relative;
+  top: 8px;
+}
+
+.container-img:hover {
+  top: -2px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgb(44, 44, 44);
+  box-shadow: 0 0 2em black;
+}
+
+.text {
+  margin: 2px;
+  font-size: 24px;
+}
+
+h2 {
+  margin: 2px;
+  font-size: 24px;
+  font-family: "Acme", sans-serif;
+  text-shadow: 4px 4px 1px black;
+}
+
+.container-img {
+  animation: card-animation;
+  animation-duration: 2s;
+}
+
+.container-text {
+  animation: card-animation;
+  animation-duration: 0.2s;
+}
+
+@keyframes card-animation {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+.container-initial {
+  height: 341px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 0.5em whitesmoke;
+  background-image: url("./assets/taca-torneio-tribruxo.jpg");
+}
+
+.container-initial {
+  animation: animation;
+  animation-duration: 1s;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.image {
+  position: relative;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 41px;
+  font-family: "Acme", sans-serif;
+  text-shadow: 4px 4px 1px black;
+}
+
+p {
+  margin: 20px;
+  font-size: 25px;
+  font-family: "Acme", sans-serif;
+  text-shadow: 2px 2px 1px black;
+}
+
+.btn-one {
+  font-size: 13px;
+  font-weight: bolder;
+  margin: 25px;
+  width: 100px;
+  padding: 10px;
+  color: white;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid white;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.btn-one:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 35px;
+  background-color: rgb(250, 250, 250, 0.3);
+  border-radius: 2px;
+  transition: all 2s ease;
+}
+
+.btn-one:hover:before {
+  width: 100%;
+}
+
+.btn-one:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.5em whitesmoke;
+}
+
+.btn-one:active {
+  margin: 25.5px;
+  font-size: 12.5px;
+}
+
+@media only screen and (min-width: 580px) {
+  .container-initial {
+    max-width: 500px;
+    height: 341px;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  .text-initial {
+    font-size: 30px;
+  }
+}

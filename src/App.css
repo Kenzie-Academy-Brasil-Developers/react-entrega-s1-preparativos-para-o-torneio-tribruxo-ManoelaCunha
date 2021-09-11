@@ -1,0 +1,39 @@
+body,
+div,
+h1,
+h2,
+p,
+button,
+img {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.App {
+  min-height: 150vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: rgb(17, 17, 17);
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.App-content {
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 580px) {
+  .App-content {
+    position: absolute;
+  }
+}
